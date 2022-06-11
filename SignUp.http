@@ -1,0 +1,10 @@
+POST /signup
+Content-Type: application/json
+Host: localhost:9090
+
+{
+  "id": "test",
+  "password": "abc123",
+  "email": "qodydgus97@naver.com",
+  "authority": "MEMBER"
+}

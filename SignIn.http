@@ -1,0 +1,7 @@
+POST /signin
+Content-Type: application/json
+Host: localhost:9090
+
+{
+  "id": "admin"
+}
