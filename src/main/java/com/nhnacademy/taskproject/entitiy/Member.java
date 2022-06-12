@@ -1,4 +1,4 @@
-package com.nhnacademy.taskproject.domain;
+package com.nhnacademy.taskproject.entitiy;
 
 import lombok.Getter;
 import lombok.Setter;

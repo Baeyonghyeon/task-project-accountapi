@@ -1,17 +1,13 @@
 package com.nhnacademy.taskproject.controller;
 
-import com.nhnacademy.taskproject.domain.Member;
+import com.nhnacademy.taskproject.entitiy.Member;
 import com.nhnacademy.taskproject.domain.MemberIdDto;
 import com.nhnacademy.taskproject.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.servlet.http.HttpServletRequest;
-import java.util.Optional;
 
 @RequiredArgsConstructor
 @RestController

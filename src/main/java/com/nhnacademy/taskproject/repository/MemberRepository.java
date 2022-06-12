@@ -1,6 +1,6 @@
 package com.nhnacademy.taskproject.repository;
 
-import com.nhnacademy.taskproject.domain.Member;
+import com.nhnacademy.taskproject.entitiy.Member;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

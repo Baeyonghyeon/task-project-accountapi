@@ -1,6 +1,6 @@
 package com.nhnacademy.taskproject.service.impl;
 
-import com.nhnacademy.taskproject.domain.Member;
+import com.nhnacademy.taskproject.entitiy.Member;
 import com.nhnacademy.taskproject.repository.MemberRepository;
 import com.nhnacademy.taskproject.service.MemberService;
 import lombok.RequiredArgsConstructor;

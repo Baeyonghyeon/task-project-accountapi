@@ -1,6 +1,6 @@
 package com.nhnacademy.taskproject.service;
 
-import com.nhnacademy.taskproject.domain.Member;
+import com.nhnacademy.taskproject.entitiy.Member;
 
 import java.util.Optional;
 
