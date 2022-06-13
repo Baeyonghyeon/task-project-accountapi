@@ -1,6 +1,5 @@
 package com.nhnacademy.taskproject.controller;
 
-import com.nhnacademy.taskproject.domain.MemberSignUpRequest;
 import com.nhnacademy.taskproject.entitiy.Member;
 import com.nhnacademy.taskproject.domain.MemberIdDto;
 import com.nhnacademy.taskproject.service.MemberService;
@@ -20,8 +19,11 @@ public class MemberRestController {
     private final MemberService memberService;
 
     @PostMapping("/signup")
-    public Member signUp(@RequestBody MemberSignUpRequest request){
-        return memberService.registerMember(request);
+    public Member signUp(@RequestBody Member member){
+        if(memberService.findMemberById(member.getId()).isPresent()){
+            return null;
+        }
+        return memberService.registerMember(member);
     }
 
     @PostMapping("/signin")
