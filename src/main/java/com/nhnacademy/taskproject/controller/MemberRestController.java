@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Optional;
+
 @RequiredArgsConstructor
 @RestController
 @Slf4j
@@ -23,7 +25,13 @@ public class MemberRestController {
     }
 
     @PostMapping("/signin")
-    public Member findMember(@RequestBody MemberIdDto memberIdDto){
-        return memberService.findMemberById(memberIdDto.getId()).get();
+    public Optional<Member> findMember(@RequestBody MemberIdDto memberIdDto){
+        Optional<Member> member = memberService.findMemberById(memberIdDto.getId());
+
+        if (member.isEmpty()) {
+            log.debug("member null!!!!!");
+        }
+
+        return member;
     }
 }
